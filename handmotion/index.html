@@ -1,9 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>ICCV 2019 Hand Motion Dataset</title>
-    <meta http-equiv="refresh" content="0; url=http://54.70.132.80:8192" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Index</title>
+
+
+    <style>
+    p {
+      padding-left: 40px;
+    }
+    h4 {
+      padding-left: 30px;
+    }
+    h3
+    {
+      padding-left: 20px;
+    }
+    td 
+    {
+      text-align: center; 
+      vertical-align: middle;
+      height: 30px; 
+      width: 130px;
+
+    }
+    </style>
+
   </head>
+
   <body>
-  </body>
+
+    <h1><center>ICCV 2019 Hand Motion Dataset</center></h1>
+
+    <p><center> The dataset will be released here soon after ICCV 2019. Please come back later. If you have any questions, please email <a href="mailto:gilwoo301@gmail.com"> the corresponding author.</a> </center> </p>
+    
+    <center><a href="https://personalrobotics.cs.washington.edu/publications/lee2019handmotiondataset.pdf"> paper </a></center>
+
+    <br><br>
+<!--
+    <p><center> Here's an example scene.<br><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7nmhwMw-wEk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+    </p>
+
+
+    <center><a href="all.zip"> Download all</a></center>
+    <br><br>
+
+    <table id="Files" align="center" border="1"> 
+        <tr> 
+            <td>Session</td> 
+            <td>Subject 1 </td> 
+            <td>Subject 1 id </td> 
+            <td>Contents </td> 
+            <td>Subject 2 </td>
+            <td>Subject 2 id </td> 
+            <td>Contents </td> 
+        </tr> 
+        
+    </table> 
+
+    <script> 
+      var last_row = 1;
+      function row(session_name, s1, sid1, s1_content, s2, sid2, s2_content) { 
+          var MyTable =  
+              document.getElementById("Files"); 
+          
+          // insert new row. 
+          var NewRow = MyTable.insertRow(last_row); 
+
+          var Newcell1 = NewRow.insertCell(0); 
+          var Newcell2 = NewRow.insertCell(1); 
+          var Newcell3 = NewRow.insertCell(2); 
+          var Newcell4 = NewRow.insertCell(3); 
+          var Newcell5 = NewRow.insertCell(4); 
+          var Newcell6 = NewRow.insertCell(5); 
+          var Newcell7 = NewRow.insertCell(6); 
+
+          Newcell1.innerHTML = session_name;
+          Newcell2.innerHTML = "<a href = '"+s1+"'>"+ s1 +"</a>";
+          Newcell3.innerHTML = sid1;
+          Newcell4.innerHTML = s1_content;
+          Newcell5.innerHTML = "<a href = '"+s2+"'>"+ s2 +"</a>";
+          Newcell6.innerHTML = sid2;
+          Newcell7.innerHTML = s2_content;
+
+          last_row++;
+      } 
+
+      var i;
+      var files = {{files|tojson}};
+      for (i = 0; i < files.length; i++) { 
+        console.log(files[i]);
+        row(files[i][0], files[i][1], files[i][2], files[i][3],
+            files[i][4], files[i][5], files[i][6]);
+      }
+    </script> 
+
+    -->
+</body>
 </html>
+
